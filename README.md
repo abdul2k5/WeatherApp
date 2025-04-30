@@ -39,7 +39,7 @@ npm/yarn
 
 **Installation**
 Clone the repo:
-git clone https://github.com/your-username/weather-app.git
+git clone https://github.com/abdul2k5/WeatherApp
 
 Install dependencies:
 cd weather-app
