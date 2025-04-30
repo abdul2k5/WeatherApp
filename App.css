@@ -1,0 +1,144 @@
+/* App.css */
+.App {
+  min-height: 100vh;
+  padding: 2rem;
+  transition: all 0.5s ease;
+}
+
+.weather-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+:root {
+  --primary-color: #1a73e8;
+  --background-color: #f0f4f8;
+  --card-background: #ffffff;
+  --text-color: #2d3436;
+  --error-color: #e74c3c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+  background-color: var(--background-color);
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weather-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--card-background);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+input {
+  flex: 1;
+  padding: 1rem;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: var(--primary-color);
+}
+
+button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1557b0;
+}
+
+.weather-info {
+  text-align: center;
+}
+
+.location {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.temperature {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin: 1rem 0;
+}
+
+.description {
+  font-size: 1.5rem;
+  color: #636e72;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.detail-card {
+  background-color: var(--background-color);
+  padding: 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.detail-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.error {
+  color: var(--error-color);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.loading {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
